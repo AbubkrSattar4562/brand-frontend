@@ -1,26 +1,77 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --brand-cream: #fdf9f2;
+    --brand-light-beige: #f6eee4;
+    --brand-beige: #eed3c4;
+    --brand-warm-brown: #a88e78;
+    --brand-soft-beige: #e2d4c2;
+    --brand-charcoal: #393939;
+  }
+}
+
+@layer utilities {
+  .font-outfit {
+    font-family: var(--font-outfit);
+  }
+
+  .font-playfair {
+    font-family: var(--font-playfair);
+  }
+
+  .font-poppins {
+    font-family: var(--font-poppins);
+  }
+
+  .text-brand-cream {
+    color: var(--brand-cream);
+  }
+  .text-brand-light-beige {
+    color: var(--brand-light-beige);
+  }
+  .text-brand-beige {
+    color: var(--brand-beige);
+  }
+  .text-brand-warm-brown {
+    color: var(--brand-warm-brown);
+  }
+  .text-brand-soft-beige {
+    color: var(--brand-soft-beige);
+  }
+  .text-brand-charcoal {
+    color: var(--brand-charcoal);
+  }
+
+  .bg-brand-cream {
+    background-color: var(--brand-cream);
+  }
+  .bg-brand-light-beige {
+    background-color: var(--brand-light-beige);
+  }
+  .bg-brand-beige {
+    background-color: var(--brand-beige);
+  }
+  .bg-brand-warm-brown {
+    background-color: var(--brand-warm-brown);
+  }
+  .bg-brand-soft-beige {
+    background-color: var(--brand-soft-beige);
+  }
+  .bg-brand-charcoal {
+    background-color: var(--brand-charcoal);
+  }
+
+  .border-brand-beige {
+    border-color: var(--brand-beige);
+  }
+  .border-brand-warm-brown {
+    border-color: var(--brand-warm-brown);
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
